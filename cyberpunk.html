@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyberpunk — La Sainte Liste</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #05040a;
+    --pink: #ff2ecb;
+    --cyan: #2ef5ff;
+    --card: #0f0c1d;
+    --border: #2a1f4d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image:
+      linear-gradient(rgba(255,46,203,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(46,245,255,0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #e8e8ff;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 40px 20px;
+  }
+  a { color: var(--cyan); }
+  .back {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--cyan);
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 3.2rem;
+    margin: 0;
+    color: var(--pink);
+    text-shadow: 0 0 10px var(--pink), 0 0 30px rgba(255,46,203,0.5);
+    letter-spacing: 3px;
+  }
+  header p {
+    color: var(--cyan);
+    text-shadow: 0 0 6px rgba(46,245,255,0.6);
+  }
+  section {
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+  }
+  section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--cyan);
+    font-size: 1.4rem;
+    border-left: 3px solid var(--pink);
+    padding-left: 12px;
+  }
+  .entry {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  }
+  .entry .name { font-size: 1.1rem; font-weight: 600; }
+  .tag {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+  }
+  .meta { color: #8a86b8; font-size: 0.85rem; }
+
+  #comments {
+    background: var(--card);
+    border: 1px dashed var(--cyan);
+    padding: 20px;
+    text-align: center;
+    color: var(--cyan);
+  }
+</style>
+</head>
+<body>
+
+<a class="back" href="index.html">&larr; Retour à l'accueil</a>
+
+<header>
+  <h1>CYBERPUNK</h1>
+  <p>Night City — chronologie &amp; canon</p>
+</header>
+
+<section>
+  <h2>Univers</h2>
+
+  <div class="entry">
+    <span class="name">Cyberpunk 2077</span>
+    <span class="meta">PC / Consoles — 2020</span>
+    <span class="tag">Canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Cyberpunk: Edgerunners</span>
+    <span class="meta">Anime — 2022</span>
+    <span class="tag">Canon</span>
+  </div>
+</section>
+
+<section id="comments">
+  Emplacement réservé pour les commentaires (Cusdis à intégrer ici)
+</section>
+
+</body>
+</html>
