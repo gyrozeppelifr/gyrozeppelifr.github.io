@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fallout — La Sainte Liste</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1a1a12;
+    --terminal: #4b5e2e;
+    --terminal-bright: #9fbf3f;
+    --card: #23231a;
+    --border: #4b4b33;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image: radial-gradient(ellipse at top, #2a2a1a 0%, #1a1a12 70%);
+    color: var(--terminal-bright);
+    font-family: 'Share Tech Mono', monospace;
+    padding: 40px 20px;
+  }
+  a { color: var(--terminal-bright); }
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid var(--terminal-bright);
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+  }
+  header h1 {
+    font-family: 'VT323', monospace;
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 4px;
+    text-shadow: 0 0 8px var(--terminal-bright);
+  }
+  header p {
+    color: var(--terminal);
+    margin: 5px 0 0 0;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--terminal-bright);
+  }
+  .back:hover { text-decoration: underline; }
+  section {
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+  }
+  section h2 {
+    font-family: 'VT323', monospace;
+    font-size: 1.8rem;
+    border-bottom: 1px dashed var(--terminal);
+    padding-bottom: 6px;
+  }
+  .entry {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .entry .name { font-size: 1.1rem; }
+  .tag {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .canon { background: #4a7c1e; color: #eaffcc; }
+  .semi { background: #8a6a1e; color: #ffedcc; }
+  .non { background: #7c1e1e; color: #ffcccc; }
+  .meta { color: var(--terminal); font-size: 0.85rem; }
+
+  #comments {
+    background: rgba(0,0,0,0.3);
+    border: 1px dashed var(--terminal);
+    padding: 20px;
+    text-align: center;
+    color: var(--terminal);
+  }
+</style>
+</head>
+<body>
+
+<a class="back" href="index.html">&larr; Retour à l'accueil</a>
+
+<header>
+  <h1>FALLOUT</h1>
+  <p>War never changes — chronologie &amp; canon</p>
+</header>
+
+<section>
+  <h2>Origin Lore / Côte Ouest</h2>
+
+  <div class="entry">
+    <span class="name">Fallout 1</span>
+    <span class="meta">PC — 1997</span>
+    <span class="tag canon">Canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Fallout 2</span>
+    <span class="meta">PC — 1998</span>
+    <span class="tag canon">Canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Fallout Tactics</span>
+    <span class="meta">PC — 2001</span>
+    <span class="tag semi">Semi-canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Fallout Bible</span>
+    <span class="meta">Livre — 2002</span>
+    <span class="tag semi">Semi-canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Fallout: Van Buren</span>
+    <span class="meta">PC — 2003</span>
+    <span class="tag semi">Semi-canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Fallout: Brotherhood of Steel</span>
+    <span class="meta">PS2 — 2004</span>
+    <span class="tag non">Non canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">All Roads Lead To Vegas</span>
+    <span class="meta">Comics — 2010</span>
+    <span class="tag canon">Canon</span>
+  </div>
+
+  <div class="entry">
+    <span class="name">Fallout: New Vegas</span>
+    <span class="meta">PC — 2010</span>
+    <span class="tag canon">Canon</span>
+  </div>
+</section>
+
+<section>
+  <h2>Bethesda Lore / Côte Est</h2>
+
+  <div class="entry">
+    <span class="name">One Man and a Crate of Puppets</span>
+    <span class="meta">2011</span>
+    <span class="tag semi">Semi-canon</span>
+  </div>
+</section>
+
+<section id="comments">
+  Emplacement réservé pour les commentaires (Cusdis à intégrer ici)
+</section>
+
+</body>
+</html>
