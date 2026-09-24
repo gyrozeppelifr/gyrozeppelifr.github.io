@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Sainte Liste</title>
+<style>
+  :root {
+    --bg: #0d0d0f;
+    --card-bg: #17171b;
+    --text: #e8e8e8;
+    --muted: #9a9a9a;
+    --accent: #d4a017;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 40px 20px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  header p {
+    color: var(--muted);
+    margin-top: 0;
+  }
+  .category {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+  }
+  .category h2 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    border: 1px solid #2a2a2e;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  .card.disabled {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>La Sainte Liste</h1>
+  <p>Référencement et chronologie de licences — jeux, films, animes</p>
+</header>
+
+<div class="category">
+  <h2>Jeux</h2>
+  <div class="grid">
+    <a class="card" href="fallout.html">Fallout</a>
+    <a class="card" href="cyberpunk.html">Cyberpunk</a>
+    <a class="card disabled" href="#">Uncharted (à venir)</a>
+  </div>
+</div>
+
+<div class="category">
+  <h2>Films / Anime</h2>
+  <div class="grid">
+    <a class="card disabled" href="#">Initial D (à venir)</a>
+  </div>
+</div>
+
+</body>
+</html>
